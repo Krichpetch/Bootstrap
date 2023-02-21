@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ANIME MAN</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+        </symbol>
+        <symbol id="controller" viewBox="0 0 16 16">
+            <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+            <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+        </symbol>
+        <symbol id="questionmark" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+        </symbol>
+        <symbol id="dollarsign" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+        </symbol>
+        <symbol id="music" viewBox="0 0 16 16">
+            <path d="M11 6.64a1 1 0 0 0-1.243-.97l-1 .25A1 1 0 0 0 8 6.89v4.306A2.572 2.572 0 0 0 7 11c-.5 0-.974.134-1.338.377-.36.24-.662.628-.662 1.123s.301.883.662 1.123c.364.243.839.377 1.338.377.5 0 .974-.134 1.338-.377.36-.24.662-.628.662-1.123V8.89l2-.5V6.64z"/>
+            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+        </symbol>
+        <symbol id="youtube"viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </symbol>
+    </svg>
+
+    <!-- Header/Nav-Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/images/Logo.png" height="30px"></img>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">Manga</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
+                        <style>
+                            .dropdown-menu a:hover {
+                                color: rgb(0, 0, 0);
+                                background-color: #FFCC00;
+                            }
+                        </style>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item d-flex gap-2 align-items-center " href="alert.html"><svg class="bi" width="16" height="16"><use xlink:href="#controller"></use></svg>Games </a></li>
+                            <li><a class="dropdown-item d-flex gap-2 align-items-center" href="alert.html"><svg class="bi" width="16" height="16"><use xlink:href="#music"></use></svg>Music </a></li>
+                            <li><a class="dropdown-item d-flex gap-2 align-items-center" href="alert.html"><svg class="bi" width="16" height="16"><use xlink:href="#dollarsign"></use></svg>Merchandises </a></li>
+                            <li><a class="dropdown-item d-flex gap-2 align-items-center" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><svg class="bi" width="16" height="16"><use xlink:href="#questionmark"></use></svg>Help </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#"><svg class="bi" width="16" height="16"><use xlink:href="#trash"></use></svg>Support us </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"><input class="form-control" type="search" placeholder="Search" aria-label="Search"></form>
+                <div class="text-end"><a href="signin.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a><a href="signup.html"><button type="button" class="btn btn-warning">Sign-up</button></a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll bar -->
+    <style>
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background: #FFCC00;
+            border-radius: 10px;
+        }
+        
+        body::-webkit-scrollbar-track {
+            background: #1e1e24;
+        }
+    </style>
+
+    <!-- Carousel -->
+    <style>
+        .carousel-item {
+            height: 32rem;
+            background: #777;
+            color: #ffffff;
+            font-family: 'Poppins';
+        }
+        
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+    </style>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay-image" style="background-image:url(/images/Onepunchman3.jpg); background-position: top;"></div>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-warning" style=" font-family: 'Mochiy Pop One'; -webkit-text-stroke: 2px rgb(0, 0, 0);">Saitama vs. Tatsumaki</h1>
+                        <p style="font-size: 18px; ">
+                            The fight is reaching its climax. How will the battle between the greatest ends?
+                            <br> Check out the latest manga chapter of OPM.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-warning " href="https://cubari.moe/read/gist/OPM/179/1/ ">Check it out</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="overlay-image " style="background-image:url(/images/KimetsuNoYaiba.jpg); background-position: bottom 30%; "></div>
+                <div class="container ">
+                    <div class="carousel-caption ">
+                        <h1 class="text-warning" style="font-family: 'Mochiy Pop One'; -webkit-text-stroke: 2px rgb(0, 0, 0);">The Blacksmith Village</h1>
+                        <p style="font-size: 18px; ">So much hype around the new release of the beloved modern series in the form of another movie.</p>
+                        <p><a class="btn btn-lg btn-warning " href="https://www.youtube.com/watch?v=U9Br9QWyq9s ">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="overlay-image " style="background-image:url(/images/Onepiece.png); "></div>
+                <div class="container ">
+                    <div class="carousel-caption text-end ">
+                        <h1 class="text-warning" style="font-family: 'Mochiy Pop One'; -webkit-text-stroke: 2px rgb(0, 0, 0); ">Full of Bangers</h1>
+                        <p style="font-size: 18px; font-weight: 300; ">The One piece (Opening Playlist) is REAL!!!, and it's amazing!</p>
+                        <p><a class="btn btn-lg btn-warning " href="https://open.spotify.com/playlist/4IQUdsVry6H16OT9e19Ldz ">Listen now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button " data-bs-target="#myCarousel " data-bs-slide="prev ">
+            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+    <!-- Hero -->
+    <div class="container col-xxl-8 px-4 py-5 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
+            <div class="col-10 col-sm-8 col-lg-6 "><img src="/images/ShounenJump.jpg " class="d-block mx-lg-auto img-fluid " alt="Bootstrap Themes " width="700 " height="500 " loading="lazy "></div>
+            <div class="col-lg-6 ">
+                <h1 class="display-5 fw-bold lh-1 mb-3 ">Enjoy Anime, Manga and Many more with US.</h1>
+                <p class="lead ">The Anime Man is a website that will provide you an INFINITE amount of Japanese fictional contents for you to savor.
+                    <br>We operates 24/7 to deliver you the newest and freshest anime and manga updates, with a sprinkle of games, music and merchandises.
+                    <br>Share your favorite pieces of content with your friends, and relish it together with our services.</p>
+                <p class="lead " style="font-size: 21px; font-family: 'Poppins'; font-weight: 600; color: rgb(255, 187, 0); align-items: center; "> " Want some help with Anime? Find The Anime Man " </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
+                    <a href="signin.html"><button type="button " class="btn btn-warning btn-lg px-4 me-md-2 ">JOIN US</button></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button type="button " class="btn btn-outline-dark btn-lg px-4 ">Need Help?</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Album -->
+    <section class="py-5 text-center container-fluid bg-dark">
+        <div class="row py-lg-5 ">
+            <div class="col-lg-6 col-md-8 mx-auto ">
+                <h1 class="fw-light fs-1 text-warning ">Explore</h1>
+                <p class="lead text-light ">Catch up to the newest updates here.</p>
+                <p>
+                    <a href="#scroll-target" class="btn btn-outline-light my-2 "> See what's new? </a>
+                    <script>
+                        // Get the button:
+                        let mybutton = document.getElementById("myBtn");
+
+                        // When the user scrolls down 20px from the top of the document, show the button
+                        window.onscroll = function() {
+                            scrollFunction()
+                        };
+
+                        function scrollFunction() {
+                            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                mybutton.style.display = "block";
+                            } else {
+                                mybutton.style.display = "none";
+                            }
+                        }
+
+                        // When the user clicks on the button, scroll to the top of the document
+                        function topFunction() {
+                            document.body.scrollTop = 0; // For Safari
+                            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                        }
+                    </script>
+                    <button onclick="topFunction()" class="btn btn-outline-warning my-2 " id="myBtn" title="Go to top">Back to the top</button>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light ">
+        <div class="container " id="scroll-target">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://mangaplus.shueisha.co.jp/viewer/1015639">
+                            <img class="card-img-top " src="/images/ChainsawMan.jpg" class="d-block mx-lg-auto img-fluid " alt="Chainsaw Man" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Catch up to the latest chapter of Chainsaw Man, "Triangle". Is Asa gonna be okay? What will Denji do to solve the situation?</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary "><a href="https://mangaplus.shueisha.co.jp/viewer/1015639" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Chainsaw Man ch.120</a></button>
+                                </div>
+                                <small class="text-muted ">Manga</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100171">
+                            <img class="card-img-top " src="/images/Dandadan.jpg" class="d-block mx-lg-auto img-fluid " alt="Dandadan" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">An aspiring Shounen is here! Why Dandadan will be the next big thing once it gets animated, and how far could it go?</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://mangaplus.shueisha.co.jp/titles/100171" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Dandadan</a></button>
+                                </div>
+                                <small class="text-muted ">Manga</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.youtube.com/watch?v=1yXa8MAmocQ&t=1s">
+                            <img class="card-img-top " src="/images/Oshi_no_Ko.jpg" class="d-block mx-lg-auto img-fluid " alt="Oshi_no_Ko" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Check out the story about the life of "Ai Hoshino", a famous idol, in the new manga from Aka Akasaka, the author of "Kaguya-sama, Love is war".</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=1yXa8MAmocQ&t=1s" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Oshi no Ko</a></button>
+                                </div>
+                                <small class="text-muted ">Anime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.youtube.com/watch?v=6PdcVX8kG0k">
+                            <img class="card-img-top " src="/images/SpyXFam.jpg" class="d-block mx-lg-auto img-fluid " alt="SpyXFam" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Loid, Yor and Anya got nominated for the best family of 2023 in the Cruchyroll anime award. The show also receive more a ton of support from all over the world.</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=6PdcVX8kG0k" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Spy X Family</a></button>
+                                </div>
+                                <small class="text-muted ">Anime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.youtube.com/watch?v=3eytpBOkOFA">
+                            <img class="card-img-top " src="/images/Gundam.jpg" class="d-block mx-lg-auto img-fluid " alt="Gundam" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Season two is on the way! Studio Sunrise announced that Gundam: The Witch from Mercury will part two will be released in 2023 Fall.</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=3eytpBOkOFA" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Gundam : The witch from mercury</a></button></div>
+                                <small class="text-muted ">Anime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.youtube.com/watch?v=vWWy7V9rCrA">
+                            <img class="card-img-top " src="/images/Persona 5 Royal.jpg" class="d-block mx-lg-auto img-fluid " alt="Persona" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">With the newly released version of the beloved "Persona" series in PC, the game reaches an all time high in terms of amount of concurrent players.</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=vWWy7V9rCrA" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Persona 5 Royal</a></button>
+                                </div>
+                                <small class="text-muted ">Games</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://open.spotify.com/artist/2nvl0N9GwyX69RRBMEZ4OD">
+                            <img class="card-img-top " src="/images/Bocchi.jpg" class="d-block mx-lg-auto img-fluid " alt="Bocchi" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">From the highest rated anime of Fall 2023, "Bocchi the Rock!", Kessoku band exploded in popularity. <br> Listen to their first album now!</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://open.spotify.com/artist/2nvl0N9GwyX69RRBMEZ4OD" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Kessuku Band</a></button>
+                                </div>
+                                <small class="text-muted ">Music</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.amazon.com/Yu-gi-oh-Gx-Starter-Academy-Jaden/dp/B000U1W6V0/ref=sr_1_1?keywords=Jaden+Yuki+Deck&qid=1676989888&sr=8-1">
+                            <img class="card-img-top " src="/images/yugioh-gx-deck.jpg" class="d-block mx-lg-auto img-fluid " alt="yugioh-gx-deck" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Become Yugi Judai! Get yourself a limited edition "Elemental heroes" starting deck that's used by Yugi in the anime, from now until 29th February.</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.amazon.com/Yu-gi-oh-Gx-Starter-Academy-Jaden/dp/B000U1W6V0/ref=sr_1_1?keywords=Jaden+Yuki+Deck&qid=1676989888&sr=8-1" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Yugi-Oh-GX</a></button>
+                                </div>
+                                <small class="text-muted ">Merchandises</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <a href="https://www.youtube.com/watch?v=lZGo8jcEW2M">
+                            <img class="card-img-top " src="/images/Ado.jpg" class="d-block mx-lg-auto img-fluid " alt="Ado" width="100% " height="225 " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice" focusable="false ">
+                        </a>
+                        <div class="card-body ">
+                            <p class="card-text ">Some would call her the best of "Gen Z", listen to tracks from Ado's that shook the Japanese music charts on release.</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="btn-group ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=lZGo8jcEW2M" class="text-muted text-decoration-none">View</a></button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary "><a href="alert.html" class="text-muted text-decoration-none">Ado</a></button>
+                                </div>
+                                <small class="text-muted ">Music</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
+            <div class="col-md-6 d-flex align-items-center ">
+                <div class="mb-4 me-2 mb-md-0 text-muted text-decoration-none lh-1 "></div>
+                <a href="#"> <img src="/images/Logo small.png" width="30 " height="30px" style="position:relative; top:-50%;"></img>
+                </a>
+                <span class="mb-md-0text-muted ">© 2023 THE ANIME MAN.co, Inc. (For Academic Purposes)</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+                <li class="ms-3 "><a class="text-muted " href="https://www.instagram.com/krichpetchsin/?hl=th "><svg class="bi " width="24 " height="24 "><use xlink:href="#instagram "></use></svg></a></li>
+                <li class="ms-3 "><a class="text-muted " href="https://www.facebook.com/profile.php?id=100009466104873 "><svg class="bi " width="24 " height="24 "><use xlink:href="#facebook "></use></svg></a></li>
+                <li class="ms-3 "><a class="text-muted " href="https://www.youtube.com/channel/UCb6mfe8T_1FItJBTylu-yXQ "><svg class="bi " width="24 " height="24 "><use xlink:href="#youtube "></use></svg></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
